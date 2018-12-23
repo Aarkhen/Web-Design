@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Wasp Ink</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="brand">
+        <a href="index.html"><img id="logo" src="waspLogo.jpg" alt="Wasp Ink Tattoo Saloon Logo"></a>
+        <h1 id="title" onmouseover="sting(this)" onmouseout="revert(this)">Wasp Ink Tattoo Saloon</h1>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <a class="navbar-brand" href="index.html">
+      <img src="waspLogo.jpg" max-width:"100%" height="30" alt="Wasp Ink Tattoo Saloon Logo">
+      Wasp Ink
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+          <a class="nav-link nav-item" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link nav-item active" href="artists.html">Artists</a>
+          <a class="nav-link nav-item" href="gallery.html">Gallery</a>
+          <a class="nav-link nav-item" href="#" onclick="error()">Merch</a>
+          <a class="nav-link nav-item" href="contacts.html">Contacts</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="generalImages" src="artist1.jpg" alt="Tattoo Artist Working On Full-Back Tattoo">
+        </div>
+        <div class="col-lg-8">
+          <h1>Josh, the talent</h1>
+          <p>Josh is 24 years old at the moment. He finished college when he was 22, and got a higher arts degree. He always liked to experiment, and that is what he still does today. If you like to experiment with a new style of tattooing, Josh is your best bet. Thanks to his resilience and patience, he will not get up from his artist chair until your expectations have been met, and are completelty satisfied with your new tattoo</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="generalImages" src="artist2.jpg" alt="Tattoo Artist Freaking Out, While Customer Is Freaking Out">
+        </div>
+        <div class="col-lg-8">
+          <h1>Ben, the Comedian</h1>
+          <p>Ben is turned 27 last year. He has no fancy degrees, but he puts his heart and soul into his art. At some point he dreamed about becoming a Stand-up comedian, which he now does in our saloon to everyone's entertainment. Whatever problems you might be facing in your life, or however dark your view of the world is, this light-hearted guy will bring a smile to your face.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="generalImages" src="artist3.jpg" alt="Tattoo Artist Working On Leg Tattoo Using Cool Prosthetic Arm">
+        </div>
+        <div class="col-lg-8">
+          <h1>Stan, the dreamer</h1>
+          <p>Stan has been working in our Saloon since he was 19. He wanted to become a tattoo artist eversince he was a child, and he made his dream come true by working hard. Unfortunately he lost an arm during an accident when he was 23, but this didn't keep him from continuing on with his career. He designed his cool steam-punk prostheic arm himself and if anything, it has only helped him to become a better artist by eliminating shaky hands and sweaty palms. Stan is not only a great artist, but a big dreamer and the most creative guy you will ever meet.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <h2>Opening Hours</h2>
+          <ul class="list-unstyled">
+            <li class="hours">Monday<span class="right">10:00-18:00</span></li>
+            <li class="hours">Tuesday<span class="right">10:00-18:00</span></li>
+            <li class="hours">Wednesday<span class="right">10:00-18:00</span></li>
+            <li class="hours">Thursday<span class="right">10:00-18:00</span></li>
+            <li class="hours">Friday<span class="right">10:00-18:00</span></li>
+            <li class="hours">Saturday<span class="right">10:00-16:00</span></li>
+            <li class="hours">Sunday/Bank Holiday<span class="right">Closed</span></li>
+          </ul>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Web Design Project 2018&copy
+    </div>
+  </body>
+  <script>
+    function error(){
+      alert("We are sorry, but our Merch page is not live yet. Check back in a bit to stay updated!");
+    }
+    function sting(id){
+      id.innerHTML = "We know it stings"
+    }
+    function revert(id){
+      id.innerHTML = "Wasp Ink Tattoo Saloon"
+    }
+  </script>
+</html>
